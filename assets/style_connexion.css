@@ -1,0 +1,137 @@
+#logo{
+	height: 5%;
+	width: 5%;
+}
+
+.bandeau{
+	background-color: white;
+    padding: 5px;
+    text-align: center;
+    margin-top: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -10px;
+}
+
+button{
+	box-shadow: 10px 5px 20px darkblue;
+}
+
+body{
+	background-color: #004aad;
+	font-family: Arial;
+}
+
+.conteneur{
+	justify-content: space-between;
+	align-content: center;
+	color: white;
+	display: flex;
+	margin-top: 10px;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    margin-left: -18px;
+	width: 950px;
+    max-width: 950px;
+	height: 587.5px;
+	border: solid white;
+    overflow: hidden;
+}
+
+.slide-wrapper {
+	display: flex;
+	transition: transform 1s ease; 
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 100%; 
+}
+
+.slide img {
+    width: 100%;
+	height: 587.5px;
+}
+
+#conteneur_connexion{
+	margin-top: 60px;
+	padding: 10px;
+	margin-left: 30px;
+	align-content: center;
+}
+
+#message{
+	text-shadow: 10px 5px 3px darkblue;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 23.5px;
+	color: whitesmoke;
+}
+
+
+#connexion{
+	margin-top: 10px;
+	padding: 20px;
+	border-radius: 1vh;
+}
+
+#connexion legend{
+	text-shadow: 10px 5px 3px darkblue;
+	text-align: center;
+	text-decoration: bold;
+	font-size: 25px;
+}
+
+
+#conteneur_label_input label{
+	text-shadow: 10px 5px 3px darkblue;
+	display: block;
+	padding: 5px;
+}
+
+#conteneur_label_input input{
+	box-shadow: 0.65vw 0.71vh 2.84vh darkblue;
+	border: 1px solid #ccc;
+	border-radius: 1vh;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: block;
+}
+
+
+#conteneur_btn_mdp{
+	margin-top: 50px;
+}
+
+.mdp{
+	display: block;
+	background: lightgrey;
+	color: black;
+	border: 0px;
+	border-radius: 1vh;
+	padding-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 190px;
+}
+
+
+#conteneur_bouton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 7px;
+}
+
+#btn_connexion{
+	border-radius: 1vw;
+	padding: 10px;
+	margin: 10px;
+	width: 20vw;
+	border: 0px;
+}

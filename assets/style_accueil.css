@@ -1,0 +1,121 @@
+/*Partie contenue / Body*/
+body 
+{
+  	font-family: Arial, sans-serif;
+	background: #004aad;
+}
+
+body label
+{
+	color: white;
+	font-weight: bold;
+	font-size: 2.2884114583333335vw;
+	text-shadow: 10px 5px 3px darkblue;
+}
+
+/*Contenant pour disposer les éléments*/
+.conteneur{}
+
+.case1
+{
+	position: relative;
+	width: 50.21%; 
+	height: 85vh; 
+	border: solid #ffffff; 
+	margin-left: -7.98px;
+	float:left; 
+	text-align: justify;
+}
+
+.case2
+{
+	position: relative;
+	width: 50.213%; 
+	height: 85vh; 
+	border: solid #ffffff; 
+	margin-right: -7.98px ; 
+	float: right;
+	text-align: justify;
+}
+
+/*Éléments de la page*/
+.conteneur button
+{
+	position: absolute;
+	border-radius: 3.5vh;
+	width: 10.5vw;
+	height: 8vh;
+	box-shadow: 0.65vw 0.71vh 2.84vh darkblue;
+	color: #004aad;
+	font-weight: bold;
+	font-size: 2.5vh;
+	vertical-align: top;
+	background-color: white;
+	left: 6.51vw;
+	bottom: 29.16vh;
+	z-index: 2;
+	transition: background-color 0.3s ease;
+}
+
+.conteneur button:hover 
+{
+  	background-color: lightgray;
+}
+
+.fond	
+{
+	text-align: left;
+	position: absolute;
+	bottom: 42.67vh;
+	right: 17.90vw;
+	left: 6.51vw;
+	z-index: 2;
+	background: #004aad;
+}
+
+.conteneur button span
+{
+	display: block;
+}
+
+.label_recherche
+{
+	font-size: 2vh;
+	opacity: 70%;
+}
+
+/*Image Tiplouf*/
+.cercle
+{
+	position: absolute;
+  	background:#ffffff;
+  	border-radius:50%;
+  	width: 11.06vw;
+  	height: 24.18vh;
+  	overflow: hidden;
+  	bottom: 22.75vh;
+  	right: 5.20vw;
+  	box-shadow: 1.04vw 1.99vh 3.55vh darkblue;
+  	z-index: 2;
+}
+
+.cercle img
+{
+	position: absolute;
+    bottom: -5;
+    right: -100;
+    width: 11.71vw;
+    height: auto;
+}
+
+
+/*Décoration de fond*/
+.carre
+{
+	position: absolute;
+	border: solid white;
+	background-color: white;
+	width: 1.42vh;
+	height: 0.65vw;
+	z-index: 1;
+}

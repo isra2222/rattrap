@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #004aad;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    margin-top: 28vh;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.delete-link {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.delete-link:hover {
+    text-decoration: underline;
+}
+
+.confirmation-container {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.confirmation-container p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.confirmation-container button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.confirmation-container button:hover {
+    background-color: #cc0000;
+}
+
+.confirmation-container a button {
+    background-color: #ccc;
+    color: #333;
+}
+
+.confirmation-container a button:hover {
+    background-color: #999;
+}
