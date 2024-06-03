@@ -42,6 +42,8 @@
                         echo '<a href="Ajouter_entreprise.php">Créer Entreprise</a>';
                         echo '<a href="Ajouter_etudiant.php">Créer Etudiant</a>';
                         echo '<a href="Liste_etudiant.php">Liste Etudiant</a>';
+                        echo '<a href="Ajouter_pilote.php">Créer pilote</a>';
+                        
                     }
                 }
             ?>

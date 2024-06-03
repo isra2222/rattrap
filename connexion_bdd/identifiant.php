@@ -1,6 +1,6 @@
 <?php
 	$host = 'localhost';
-	$dbname = 'world';
+	$dbname = 'test';
 	$username = 'root';
-	$password = 'Bonjour12';
+	$password = '';
 ?>
