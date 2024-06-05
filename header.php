@@ -40,10 +40,13 @@
                     else{
                         echo '<a href="Avis.php">Mes avis</a>';
                         echo '<a href="Ajouter_entreprise.php">Créer Entreprise</a>';
+                        echo '<a href="Rechercher_entreprise.php">Liste Entreprise</a>';
                         echo '<a href="Ajouter_etudiant.php">Créer Etudiant</a>';
                         echo '<a href="Liste_etudiant.php">Liste Etudiant</a>';
-                        echo '<a href="Ajouter_pilote.php">Créer pilote</a>';
-                        
+                        echo '<a href="Supprimer_etudiant.php">Supprimer Etudiant</a>';
+                        echo '<a href="Ajouter_pilote.php">Créer Enseignant</a>';
+                        echo '<a href="Supprimer_enseignant.php">Supprimer Enseignant</a>';
+                    
                     }
                 }
             ?>

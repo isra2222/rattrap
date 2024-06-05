@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Liste étudiants</title>
+    <title>Liste enseignants</title>
     <link rel="stylesheet" href="assets/style_liste.css">
     <link rel="shortcut icon" href="Image/logo.png"/>
 </head>
@@ -13,19 +13,19 @@
     </header>
 
     <div class="search-container">
-        <form id="searchForm" action="requete/recherche_etudiant.php" method="POST">
+        <form id="searchForm" action="requete/recherche_enseignant.php" method="POST">
             <input type="text" id="nom" name="nom" placeholder="Nom" class="search-input">
             <input type="text" id="prenom" name="prenom" placeholder="Prénom" class="search-input">
             <div class="selection-container">
-                <label for="classe" class="select-label">Sélectionnez une promotion :</label>
-                <select id="classe" name="classe" class="select-input">
-                    <option value="">Sélectionner une promotion</option>
+                <label for="specialite" class="select-label">Sélectionnez une spécialité :</label>
+                <select id="specialite" name="specialite" class="select-input">
+                    <option value="">Sélectionner une spécialité</option>
                     <?php
                         require 'connexion_bdd/connexion_affichage.php';
-                        $requete = "SELECT DISTINCT nom_promotion, specialite FROM promotion";
+                        $requete = "SELECT DISTINCT specialite FROM enseignant";
                         $result = $dbh->query($requete);
                         while ($colonne = $result->fetch(PDO::FETCH_ASSOC)) {
-                            echo "<option value=\"" . $colonne['nom_promotion'] . " " . $colonne['specialite'] . "\">" . $colonne['nom_promotion'] . " " . $colonne['specialite'] . "</option>";
+                            echo "<option value=\"" . $colonne['specialite'] . "\">" . $colonne['specialite'] . "</option>";
                         }
                     ?>
                 </select>
@@ -40,3 +40,5 @@
     <?php include 'footer.php'; ?>
 </body>
 </html>
+
+
