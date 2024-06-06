@@ -15,7 +15,6 @@
             <?php
                 require 'connexion_bdd/creation_connexion.php';
 
-                session_start();
 
                 if(isset($_SESSION['id_compte'])) 
                 {

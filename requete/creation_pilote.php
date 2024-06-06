@@ -1,12 +1,12 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Paramètres de connexion à la bdd
+   
     $servername = "localhost";
     $username = "root";
     $password = "";
     $dbname = "test";
 
-    // Créer une connexion
+    
     $conn = new mysqli($servername, $username, $password, $dbname);
 
 
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $specialite = $_POST['specialite'];
     $debutens = $_POST['debutens'];
 
-    // Hacher le mdp
+    
     $hashed_password = password_hash($password, PASSWORD_BCRYPT);
 
     
@@ -47,7 +47,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             $id_promotion = $promotion_ids[$promotion];
 
-            // Insérer dans la table piloter
             $sql_piloter = "INSERT INTO piloter (id_enseignant, id_promotion, date_debut_ens, date_fin_ens) VALUES ('$id_enseignant', '$id_promotion', '$debutens', DATE_ADD('$debutens', INTERVAL 1 YEAR))";
             if ($conn->query($sql_piloter) === TRUE) {
                 echo "Nouveau pilote ajouté avec succès";

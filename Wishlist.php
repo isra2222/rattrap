@@ -1,3 +1,4 @@
+<?php include "requete/verif.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +21,7 @@
             $page = isset($_GET['page']) ? $_GET['page'] : 1;
             $offreParPage = 1; // Nombre d'offres par page
 
-            // Correction : Utilisation de la table et de la colonne correctes
+            
             $sql = "SELECT nom_entreprise FROM entreprise";
             $result = $dbh->query($sql);
             $totalOffre = $result->rowCount();
@@ -28,7 +29,7 @@
 
             $offset = ($page - 1) * $offreParPage;
 
-            // Correction : Utilisation de la table et de la colonne correctes
+            
             $sql = "SELECT nom_entreprise FROM entreprise LIMIT $offset, $offreParPage";
             $result = $dbh->query($sql);
             $index = 0;

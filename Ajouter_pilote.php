@@ -1,3 +1,4 @@
+<?php include "requete/verif.php"; ?>
 <!DOCTYPE html>
 <html>
     <head>

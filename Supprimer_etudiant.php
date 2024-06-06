@@ -1,3 +1,4 @@
+<?php include "requete/verif.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,21 +23,21 @@
                 <select id="etudiant" name="id_compte" required>
                     <option value="">Sélectionner l'étudiant*</option>
                     <?php
-                    // Paramètres de connexion à la base de données
+                    
                     $servername = "localhost";
                     $username = "root";
                     $password = "";
                     $dbname = "test";
 
-                    // Créer une connexion
+                    
                     $conn = new mysqli($servername, $username, $password, $dbname);
 
-                    // Vérifier la connexion
+                
                     if ($conn->connect_error) {
                         die("Connexion échouée: " . $conn->connect_error);
                     }
 
-                    // Récupérer les étudiants
+                    
                     $sql = "SELECT id_compte, prenom, nom FROM etudiant";
                     $result = $conn->query($sql);
 
