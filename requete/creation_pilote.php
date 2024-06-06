@@ -47,6 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             $id_promotion = $promotion_ids[$promotion];
 
+            /
             $sql_piloter = "INSERT INTO piloter (id_enseignant, id_promotion, date_debut_ens, date_fin_ens) VALUES ('$id_enseignant', '$id_promotion', '$debutens', DATE_ADD('$debutens', INTERVAL 1 YEAR))";
             if ($conn->query($sql_piloter) === TRUE) {
                 echo "Nouveau pilote ajouté avec succès";

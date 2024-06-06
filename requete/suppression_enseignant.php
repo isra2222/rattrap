@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    /
+    
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -39,10 +39,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt_compte->bind_param("i", $id_compte);
         $stmt_compte->execute();
 
-        
+
         $conn->commit();
 
-        echo "Enseignant et les enregistrements associés ont été supprimés avec succès";
+        echo "Enseignant supprimé avec succès";
     } catch (Exception $e) {
         
         $conn->rollback();
